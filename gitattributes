@@ -1,0 +1,10 @@
+name=Arduino_AD7193
+version=0.1.0
+author=Bob Mauck <mauckr@kenyon.edu>
+maintainer=Bob Mauck <mauckr@kenyon.edu>
+sentence=Arduino script for data acquisition with AD7193 
+paragraph=Arduino script for Arduino Uno that controls Load cell via an AD7193 ADC, SD card, and LCD
+category=Data acquisition
+url=https:https://github.com/ninthgiant/Arduino_AD7193
+architectures=Arduino UNO Rev 3 and 4
+includes=AD7193.h, LiquidCrystal.h, etc.
