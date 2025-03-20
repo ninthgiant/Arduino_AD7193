@@ -23,6 +23,10 @@
  * along with PRDC_AD7193.  If not, see <https://www.gnu.org/licenses/>.
  *
  */
+
+/**
+* small change by RAM at line 45 to accomodate R4 - at suggestion of van_der_decken on Arduino Forum
+*/
  
 #ifndef _PRDC_AD7193_H_
 #define _PRDC_AD7193_H_
@@ -37,7 +41,9 @@
 #define AD7193_DEFAULT_SPI_FREQUENCY 1000000
 #define AD7193_DEFAULT_SPI SPI
 #define AD7193_DEFAULT_MISO PIN_SPI_MISO
-#if defined(PIN_SPI_SS)
+
+// Change in PIN_SPI_SS definition for use with R4 - suggested by van_der_decken on Arduino Forum
+#if defined(PIN_SPI_SS)               // because it isn't defined on the R4
 #define AD7193_DEFAULT_CS PIN_SPI_SS  // use PIN_SPI_SS for R3
 #else
 #define AD7193_DEFAULT_CS PIN_SPI_CS  // change from PIN_SPI_SS for R4
